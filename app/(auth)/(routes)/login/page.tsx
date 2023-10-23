@@ -15,9 +15,9 @@ import Link from "next/link";
 
 const Login = () => {
   return (
-    <Card className="w-[350px] md:w-[400px] shadow-[0_0px_90px_rgba(8,_112,_184,_0.3)] md:p-5 py-10">
+    <Card className="w-[350px] md:w-[400px] shadow-[0_0px_200px_rgba(5,_205,_85,_0.3)] md:p-5 py-10">
       <CardHeader>
-        <CardTitle>Login</CardTitle>
+        <CardTitle>Login to your account</CardTitle>
         <CardDescription>
           Enter your email and password to login
         </CardDescription>
@@ -109,8 +109,8 @@ const Login = () => {
       <CardFooter className="flex justify-center space-x-1">
         <p className="text-sm">Not a member?</p>
         <Link
-          href="/forgot-password"
-          className="text-sm font-semibold text-muted-foreground hover:text-black dark:hover:text-white w-fit"
+          href="/register"
+          className="text-sm font-semibold text-muted hover:text-primary w-fit"
         >
           Start a 14 day free trial
         </Link>

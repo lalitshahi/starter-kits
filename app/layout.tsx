@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/providers/theme-provider";
+import { ModeToggle } from "@/components/mode-toggle";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +25,10 @@ export default function RootLayout({
           enableSystem={true}
           storageKey="discord-theme"
         >
+          <div className="fixed bottom-5 right-5">
+            <ModeToggle />
+          </div>
+
           {children}
         </ThemeProvider>
       </body>

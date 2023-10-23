@@ -1,3 +1,8 @@
+import NavBar from "@/components/top-navbar";
 export default function Home() {
-  return <p className="text-red-600 text-2xl">Home Page</p>;
+  return (
+    <div>
+      <NavBar />
+    </div>
+  );
 }
