@@ -15,9 +15,9 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Icons } from "./icons";
-import { ModeToggle } from "./mode-toggle";
-import { Button } from "./ui/button";
+import { Icons } from "@/components/icons";
+import { ModeToggle } from "@/components/mode-toggle";
+import { Button } from "@/components/ui/button";
 import { AlignJustify, ChevronRight } from "lucide-react";
 import {
   Menubar,
@@ -28,6 +28,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
+import ThemeBasedImage from "./theme-based-image";
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -70,7 +71,15 @@ const components: { title: string; href: string; description: string }[] = [
 const NavBar = () => {
   return (
     <div className="w-full flex py-3 items-center">
-      <Image
+      {/* <ThemeBasedImage
+        imageLight={"/starter-kit-light.png"}
+        imageDark={"/starter-kit-dark.png"}
+        width={160}
+        height={100}
+        alt={"logo"}
+        className="max-h-[80px] p-5 mx-3"
+      /> */}
+      {/* <Image
         src={"/starter-kit-light.png"}
         alt={"logo"}
         width={160}
@@ -83,7 +92,7 @@ const NavBar = () => {
         width={160}
         height={80}
         className="mx-5 dark:hidden block"
-      />
+      /> */}
 
       {/* Desktop Nav Component Starts */}
       <NavigationMenu className="ml-5 hidden md:block">
