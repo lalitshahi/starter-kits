@@ -173,14 +173,9 @@ const NavBar = () => {
         <ModeToggle />
         <Button
           asChild
-          className="bg-[transparent] text-accent-foreground hover:bg-accent hidden md:flex"
+          className="bg-primary text-primary-foreground hover:bg-primary/50 hidden md:flex"
         >
-          <Link href="/login">Sign in</Link>
-        </Button>
-        <Button asChild className="hidden md:flex">
-          <Link href="/register">
-            Sign up <ChevronRight />
-          </Link>
+          <Link href="/login">Get Started</Link>
         </Button>
       </div>
       {/* Desktop Nav Component Ends */}

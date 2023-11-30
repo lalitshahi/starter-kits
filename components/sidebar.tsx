@@ -50,7 +50,7 @@ const adminMenuItems = [
 ];
 const Sidebar = () => {
   return (
-    <div className="bg-accent w-[300px] h-full">
+    <div className="w-[300px] h-full">
       <ThemeBasedImage
         imageLight={"/starter-kit-light.png"}
         imageDark={"/starter-kit-dark.png"}
