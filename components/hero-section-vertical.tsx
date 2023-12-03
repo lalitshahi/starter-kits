@@ -4,7 +4,7 @@ import { range } from "lodash";
 
 const HeroSectionVertical = () => (
   <div className="flex-col justify-center h-full items-center gap-12 p-24">
-    <div className="flex flex-col justify-center flex-1 gap-7">
+    <div className="flex flex-col justify-center flex-1 gap-7 mb-5">
       <h1 className="text-[65px] font-bold text-foreground text-center">
         Launch your SaaS NOW, 🚀
         <br /> not weeks later
