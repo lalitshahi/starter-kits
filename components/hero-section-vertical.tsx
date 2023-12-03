@@ -1,11 +1,13 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { range } from "lodash";
+import Badge from "@/components/badge";
 
 const HeroSectionVertical = () => (
-  <div className="flex-col justify-center h-full items-center gap-12 p-24">
-    <div className="flex flex-col justify-center flex-1 gap-7 mb-10">
-      <h1 className="text-[65px] font-bold text-foreground text-center">
+  <div className="flex flex-col justify-center items-center gap-12 p-10 md:p-24">
+    <div className="flex flex-col justify-center items-center flex-1 gap-7 mb-10">
+      <Badge />
+      <h1 className="text-[40px] md:text-[65px] font-bold text-foreground text-center">
         Launch your SaaS NOW, 🚀
         <br /> not weeks later
       </h1>
@@ -22,7 +24,7 @@ const HeroSectionVertical = () => (
         <AvatarGroup />
       </div>
     </div>
-    <div className="flex-1 h-[800px] mx-[100px] relative rounded-xl overflow-hidden">
+    <div className="h-[300px] md:h-[800px] w-full max-w-7xl justify-center relative rounded-xl overflow-hidden aspect-square">
       <Image src={"/hero.jpg"} alt={"hero-section"} fill />
     </div>
   </div>
@@ -32,20 +34,22 @@ export default HeroSectionVertical;
 
 const AvatarGroup = () => {
   return (
-    <div className="flex relative">
-      {range(1, 5).map((avatar) => (
-        <div
-          key={avatar}
-          className="w-[45px] h-[45px] relative rounded-full overflow-hidden border-background border-4 ml-[-10px]"
-        >
-          <Image
-            src={`/user${avatar}.jpg`}
-            alt="userAvatar"
-            fill
-            className="object-cover"
-          />
-        </div>
-      ))}
+    <div className="flex flex-col md:flex-row relative justify-center lg:justify-start items-center gap-4">
+      <div className="flex">
+        {range(1, 5).map((avatar) => (
+          <div
+            key={avatar}
+            className="w-[45px] h-[45px] relative rounded-full overflow-hidden border-background border-4 ml-[-10px]"
+          >
+            <Image
+              src={`/user${avatar}.jpg`}
+              alt="userAvatar"
+              fill
+              className="object-cover"
+            />
+          </div>
+        ))}
+      </div>
       <div className="flex-col ml-[10px]">
         <Rating />
         <p>100+ users have launched</p>
@@ -56,7 +60,7 @@ const AvatarGroup = () => {
 
 const Rating = () => {
   return (
-    <div className="flex relative gap-2">
+    <div className="flex justify-center md:justify-start relative gap-2">
       {range(5).map((star) => (
         <span key={star}>⭐</span>
       ))}
