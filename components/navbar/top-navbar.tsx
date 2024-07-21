@@ -28,7 +28,7 @@ import {
   MenubarShortcut,
   MenubarTrigger,
 } from "@/components/ui/menubar";
-import ThemeBasedImage from "./theme-based-image";
+import ThemeBasedImage from "../theme-based-image";
 
 const components: { title: string; href: string; description: string }[] = [
   {

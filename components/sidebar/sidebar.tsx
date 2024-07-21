@@ -8,8 +8,8 @@ import {
   Settings,
   Users2,
 } from "lucide-react";
-import MenuItem from "./menu-item";
-import ThemeBasedImage from "./theme-based-image";
+import MenuItem from "../menu-item";
+import ThemeBasedImage from "../theme-based-image";
 
 const menuItems = [
   {

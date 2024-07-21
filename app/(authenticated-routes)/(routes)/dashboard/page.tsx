@@ -1,6 +1,6 @@
 import { DataTableDemo } from "@/components/data-table";
-import Sidebar from "@/components/sidebar";
-import NavBar from "@/components/top-navbar";
+import Sidebar from "@/components/sidebar/sidebar";
+import NavBar from "@/components/navbar/top-navbar";
 
 const Dashboard = () => {
   return (

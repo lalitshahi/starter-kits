@@ -110,7 +110,7 @@ const Login = () => {
         <p className="text-sm">Not a member?</p>
         <Link
           href="/register"
-          className="text-sm font-semibold text-muted hover:text-primary w-fit"
+          className="text-sm font-semibold text-muted-foreground hover:text-primary w-fit"
         >
           Start a 14 day free trial
         </Link>

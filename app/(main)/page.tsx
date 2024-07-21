@@ -1,13 +1,13 @@
-import HeroSectionHorizontal from "@/components/hero-section-horizontal";
-import HeroSectionVertical from "@/components/hero-section-vertical";
-import NavBar from "@/components/top-navbar";
+import Feature from "@/components/features/features";
+import HeroSectionHorizontal from "@/components/hero/hero-section-horizontal";
+import HeroSectionVertical from "@/components/hero/hero-section-vertical";
+import NavBar from "@/components/navbar/top-navbar";
 export default function Home() {
   return (
     <div className="h-full">
       <NavBar />
-      <HeroSectionHorizontal />
-      <HeroSectionVertical />
-      <div className="flex flex-col gap-5 mt-20 ml-20">
+      <Feature />
+      {/* <div className="flex flex-col gap-5 mt-20 ml-20">
         <h1 className="font-bold text-3xl">Hero Section</h1>
         <div className="flex items-center gap-2">
           <h3 className="font-semibold">Hero Section split horizontally</h3>
@@ -31,7 +31,7 @@ export default function Home() {
       <div className="bg-black/5 p-5 m-20 mt-0 rounded-2xl border">
         <NavBar />
         <HeroSectionVertical />
-      </div>
+      </div> */}
     </div>
   );
 }
